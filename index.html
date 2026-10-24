@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Count Down Your Days</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Changa+One:ital@0;1&family=Geo:ital@0;1&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>Count Down Your Days!</h1>
+
+    <form id="addForm">
+      <input
+        type="text"
+        id="nameInput"
+        placeholder="What are you counting down to?"
+        maxlength="60"
+        required
+      />
+      <input type="date" id="dateInput" required />
+      <button type="submit">Add</button>
+    </form>
+
+    <div id="list"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
